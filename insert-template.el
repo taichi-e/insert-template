@@ -1,6 +1,6 @@
 ;; insert-template
-(defun insert-template ()
-  "Insert template sentence from files."
-  (interactive)
-  (insert-file-contents "/path/to/file")
+(defun insert-template (path)
+  "Insert template sentence from inputed PATH."
+  (interactive "spath: ")
+  (insert-file-contents path)
   )
